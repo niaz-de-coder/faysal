@@ -8,7 +8,7 @@ const secondElement = document.getElementById("2nd");
 const textOptions = [
     { first: "Digital", second: "Marketing" },
     { first: "Graphics", second: "Designing" },
-    { first: "Academic", second: "Apprentice" }
+    { first: "Business", second: "Consultant" }
 ];
 
 let currentIndex = 0;
@@ -47,3 +47,18 @@ function updateText() {
 
 // Start the interval to change text every 3 seconds
 setInterval(updateText, 3000);
+
+
+
+
+
+const hero2 = document.querySelector('.a1-hero-2');
+    const hero1 = document.querySelector('.a1-hero-1');
+
+    hero2.addEventListener('mouseover', () => {
+        hero1.style.opacity = '0';
+    });
+
+    hero2.addEventListener('mouseout', () => {
+        hero1.style.opacity = '1';
+    });
