@@ -1397,3 +1397,522 @@ transition-duration: 0.3s;
         height: 100px;
     }
 }
+/* contents */
+.con-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-title-text{
+    font-size: 0.02089552238px;
+}
+.post-feed{
+    width: 90%;
+    height: 0.5970149254px;
+    padding-bottom: 0.01865671642px;
+    gap: 0.007462686567px;
+}
+.pf-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.007462686567px;
+}
+.pf-1 img{
+    width: 0.276119403px;
+    height: 0.528358209px;
+    border-radius: 0.01865671642px;
+}
+.pf-3 img{
+    width: 0.276119403px;
+    height: 0.528358209px;
+    border-radius: 0.01865671642px;
+}
+.pf-21 img{
+    width: 0.1268656716px;
+    height: 0.1268656716px;
+    border-radius: 0.01865671642px;
+}
+/* middle */
+.pf-22 img{
+    width: 0.3731343284px;
+    height: 0.2164179104px;
+    border-radius: 0.01865671642px;
+}
+.pf-23 img{
+    width: 0.1268656716px;
+    height: 0.1268656716px;
+    border-radius: 0.01865671642px;
+}
+#pf-1:hover, #pf-2:hover, #pf-3:hover, #pf-4:hover, #cov-1:hover, #st-1:hover, #st-2:hover{
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+.pf-21 span, .pf-23 span{
+    width: 0.1194029851px;
+    height: 0.1194029851px;
+}
+.pf-21 span i, .pf-23 span i{
+    font-size: 0.0223880597px;
+    color: #BBFB3F;
+}
+@media (max-width:8000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*7000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*7000);
+        padding-bottom: calc(0.01865671642px*7000);
+        gap: calc(0.007462686567px*7000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*7000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*7000);
+        height: calc(0.528358209px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*7000);
+        height: calc(0.528358209px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*7000);
+        height: calc(0.1268656716px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*7000);
+        height: calc(0.2164179104px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*7000);
+        height: calc(0.1268656716px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*7000);
+        height: calc(0.1194029851px*7000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*7000);
+    }
+}
+@media (max-width:7000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*6000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*6000);
+        padding-bottom: calc(0.01865671642px*6000);
+        gap: calc(0.007462686567px*6000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*6000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*6000);
+        height: calc(0.528358209px*6000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*6000);
+        height: calc(0.528358209px*6000);
+        border-radius: calc(0.01865671642px*6000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*6000);
+        height: calc(0.1268656716px*6000);
+        border-radius: calc(0.01865671642px*6000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*6000);
+        height: calc(0.2164179104px*6000);
+        border-radius: calc(0.01865671642px*6000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*6000);
+        height: calc(0.1268656716px*6000);
+        border-radius: calc(0.01865671642px*6000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*6000);
+        height: calc(0.1194029851px*6000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*6000);
+    }
+}
+@media (max-width:6000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*5000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*5000);
+        padding-bottom: calc(0.01865671642px*5000);
+        gap: calc(0.007462686567px*5000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*5000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*5000);
+        height: calc(0.528358209px*5000);
+        border-radius: calc(0.01865671642px*5000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*5000);
+        height: calc(0.528358209px*5000);
+        border-radius: calc(0.01865671642px*5000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*5000);
+        height: calc(0.1268656716px*5000);
+        border-radius: calc(0.01865671642px*5000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*5000);
+        height: calc(0.2164179104px*5000);
+        border-radius: calc(0.01865671642px*5000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*5000);
+        height: calc(0.1268656716px*5000);
+        border-radius: calc(0.01865671642px*5000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*5000);
+        height: calc(0.1194029851px*5000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*5000);
+    }
+}
+@media (max-width:5000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*4000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*4000);
+        padding-bottom: calc(0.01865671642px*4000);
+        gap: calc(0.007462686567px*4000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*4000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*4000);
+        height: calc(0.528358209px*4000);
+        border-radius: calc(0.01865671642px*4000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*4000);
+        height: calc(0.528358209px*4000);
+        border-radius: calc(0.01865671642px*4000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*4000);
+        height: calc(0.1268656716px*4000);
+        border-radius: calc(0.01865671642px*4000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*4000);
+        height: calc(0.2164179104px*4000);
+        border-radius: calc(0.01865671642px*4000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*4000);
+        height: calc(0.1268656716px*4000);
+        border-radius: calc(0.01865671642px*4000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*4000);
+        height: calc(0.1194029851px*4000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*4000);
+    }
+}
+@media (max-width:4000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*3000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*3000);
+        padding-bottom: calc(0.01865671642px*3000);
+        gap: calc(0.007462686567px*3000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*3000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*3000);
+        height: calc(0.528358209px*3000);
+        border-radius: calc(0.01865671642px*3000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*3000);
+        height: calc(0.528358209px*3000);
+        border-radius: calc(0.01865671642px*3000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*3000);
+        height: calc(0.1268656716px*3000);
+        border-radius: calc(0.01865671642px*3000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*3000);
+        height: calc(0.2164179104px*3000);
+        border-radius: calc(0.01865671642px*3000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*3000);
+        height: calc(0.1268656716px*3000);
+        border-radius: calc(0.01865671642px*3000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*3000);
+        height: calc(0.1194029851px*3000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*3000);
+    }
+}
+@media (max-width:3000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*2000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*2000);
+        padding-bottom: calc(0.01865671642px*2000);
+        gap: calc(0.007462686567px*2000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*2000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*2000);
+        height: calc(0.528358209px*2000);
+        border-radius: calc(0.01865671642px*2000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*2000);
+        height: calc(0.528358209px*2000);
+        border-radius: calc(0.01865671642px*2000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*2000);
+        height: calc(0.1268656716px*2000);
+        border-radius: calc(0.01865671642px*2000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*2000);
+        height: calc(0.2164179104px*2000);
+        border-radius: calc(0.01865671642px*2000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*2000);
+        height: calc(0.1268656716px*2000);
+        border-radius: calc(0.01865671642px*2000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*2000);
+        height: calc(0.1194029851px*2000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*2000);
+    }
+}
+@media (max-width:2000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*1000);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*1000);
+        padding-bottom: calc(0.01865671642px*1000);
+        gap: calc(0.007462686567px*1000);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*1000);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*1000);
+        height: calc(0.528358209px*1000);
+        border-radius: calc(0.01865671642px*1000);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*1000);
+        height: calc(0.528358209px*1000);
+        border-radius: calc(0.01865671642px*1000);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*1000);
+        height: calc(0.1268656716px*1000);
+        border-radius: calc(0.01865671642px*1000);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*1000);
+        height: calc(0.2164179104px*1000);
+        border-radius: calc(0.01865671642px*1000);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*1000);
+        height: calc(0.1268656716px*1000);
+        border-radius: calc(0.01865671642px*1000);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*1000);
+        height: calc(0.1194029851px*1000);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*1000);
+    }
+}
+@media (max-width:1000px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*500);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*500);
+        padding-bottom: calc(0.01865671642px*500);
+        gap: calc(0.007462686567px*500);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*500);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*500);
+        height: calc(0.528358209px*500);
+        border-radius: calc(0.01865671642px*500);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*500);
+        height: calc(0.528358209px*500);
+        border-radius: calc(0.01865671642px*500);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*500);
+        height: calc(0.1268656716px*500);
+        border-radius: calc(0.01865671642px*500);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*500);
+        height: calc(0.2164179104px*500);
+        border-radius: calc(0.01865671642px*500);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*500);
+        height: calc(0.1268656716px*500);
+        border-radius: calc(0.01865671642px*500);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*500);
+        height: calc(0.1194029851px*500);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*500);
+    }
+}
+@media (max-width:500px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*250);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*250);
+        padding-bottom: calc(0.01865671642px*250);
+        gap: calc(0.007462686567px*250);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*250);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*250);
+        height: calc(0.528358209px*250);
+        border-radius: calc(0.01865671642px*250);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*250);
+        height: calc(0.528358209px*250);
+        border-radius: calc(0.01865671642px*250);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*250);
+        height: calc(0.1268656716px*250);
+        border-radius: calc(0.01865671642px*250);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*250);
+        height: calc(0.2164179104px*250);
+        border-radius: calc(0.01865671642px*250);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*250);
+        height: calc(0.1268656716px*250);
+        border-radius: calc(0.01865671642px*250);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*250);
+        height: calc(0.1194029851px*250);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*250);
+    }
+}
+@media (max-width:250px) {
+    .con-title-text{
+        font-size: calc(0.02089552238px*200);
+    }
+    .post-feed{
+        height: calc(0.5970149254px*200);
+        padding-bottom: calc(0.01865671642px*200);
+        gap: calc(0.007462686567px*200);
+    }
+    .pf-2{
+        gap: calc(0.007462686567px*200);
+    }
+    .pf-1 img{
+        width: calc(0.276119403px*200);
+        height: calc(0.528358209px*200);
+        border-radius: calc(0.01865671642px*200);
+    }
+    .pf-3 img{
+        width: calc(0.276119403px*200);
+        height: calc(0.528358209px*200);
+        border-radius: calc(0.01865671642px*200);
+    }
+    .pf-21 img{
+        width: calc(0.1268656716px*200);
+        height: calc(0.1268656716px*200);
+        border-radius: calc(0.01865671642px*200);
+    }
+    /* middle */
+    .pf-22 img{
+        width: calc(0.3731343284px*200);
+        height: calc(0.2164179104px*200);
+        border-radius: calc(0.01865671642px*200);
+    }
+    .pf-23 img{
+        width: calc(0.1268656716px*200);
+        height: calc(0.1268656716px*200);
+        border-radius: calc(0.01865671642px*200);
+    }
+    .pf-21 span, .pf-23 span{
+        width: calc(0.1194029851px*200);
+        height: calc(0.1194029851px*200);
+    }
+    .pf-21 span i, .pf-23 span i{
+        font-size: calc(0.0223880597px*200);
+    }
+}
