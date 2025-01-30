@@ -62,3 +62,39 @@ const hero2 = document.querySelector('.a1-hero-2');
     hero2.addEventListener('mouseout', () => {
         hero1.style.opacity = '1';
     });
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const ids = ["st-1", "pf-1", "pf-2", "cov-1", "pf-3", "pf-4", "st-2"];
+    
+        ids.forEach(id => {
+            const img = document.getElementById(id);
+            if (img) {
+                img.addEventListener("mouseenter", function () {
+                    ids.forEach(otherId => {
+                        const otherImg = document.getElementById(otherId);
+                        if (otherImg && otherId !== id) {
+                            otherImg.style.opacity = "0";
+                        }
+                    });
+                    img.style.opacity = "1";
+                });
+    
+                img.addEventListener("mouseleave", function () {
+                    ids.forEach(otherId => {
+                        const otherImg = document.getElementById(otherId);
+                        if (otherImg) {
+                            otherImg.style.opacity = "1";
+                        }
+                    });
+                });
+            }
+        });
+    });
+
+
+
+    
