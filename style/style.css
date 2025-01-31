@@ -1916,3 +1916,164 @@ transition-duration: 0.3s;
         font-size: calc(0.0223880597px*200);
     }
 }
+/* contact */
+.contact-section {
+    margin-top: 0.03731343284px;
+    margin-bottom: 0.03731343284px;
+    width: 0.8955223881px;
+    height: 0.5074626866px;
+    position: relative;
+    border-radius: 0.01865671642px;
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+}
+.contact-section::before {
+    content: ""; /* You must include this for the pseudo-element to work */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/con-bg.jpg") center/cover no-repeat;
+    border-radius: 0.01865671642px;
+    filter: blur(10px);
+    z-index: -1;
+}
+.con-form-sec{
+    width: 60%;
+    height: 100%;
+}
+.con-form{
+    gap: 0.007462686567px;
+}
+.con-form-sec form input, .con-form-sec form textarea{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 0.003731343284px;
+}
+.con-form-sec form input::placeholder, .con-form-sec form textarea::placeholder{
+    color: #000001;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.01343283582px;
+    opacity: 70%;
+}
+.con-form-sec form input:focus, .con-form-sec form textarea:focus{
+    border: none;
+    outline: #BBFB3F solid 1px;
+}
+.con-name, .con-email{
+    width: 0.3731343284px;
+    height: 0.03731343284px;
+    font-size: 0.01343283582px;
+}
+.con-message{
+    width: 0.3731343284px;
+    height: 0.1492537313px;
+    padding-top: 0.007462686567px;
+    padding-left: 0.003731343284px;
+    font-size: 0.01343283582px;
+    resize: none;
+}
+.submit-btn{
+    width: 0.1492537313px;
+    height: 0.0223880597px;
+    color: #000001;
+    font-size: 0.01343283582px;
+    opacity: 70%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    color: #BBFB3F;
+}
+.con-rep-msg{
+    color: #BBFB3F;
+    font-size: 0.01343283582px;
+    opacity: 0;
+}
+.con-title{
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+.con-title::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 254, 0.3); /* Use RGBA instead of opacity */
+    z-index: -1; /* Send the background behind other elements */
+}
+.con-title-2{
+    width: 0.1492537313px;
+    height: 100%;
+}
+.con-first h1, .con-second h1{
+    rotate: 90deg;
+    font-size: 0.05223880597px;
+}
+.con-second span{
+    background-color: #BBFB3F;
+    width: 0.003731343284px;
+    height: 0.07462686567px;
+}
+.con-second, .con-first{
+    width: 0.05223880597px;
+    height: 100%;
+}
+@media (max-width:8000px) {
+    .contact-section {
+        margin-top: calc(0.03731343284px*7000);
+        margin-bottom: calc(0.03731343284px*7000);
+        width: calc(0.8955223881px*7000);
+        height: calc(0.5074626866px*7000);
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .contact-section::before {
+        border-radius: calc(0.01865671642px*7000);
+    }
+    .con-form{
+        gap: calc(0.007462686567px*7000);
+    }
+    .con-form-sec form input, .con-form-sec form textarea{
+        border-radius: calc(0.003731343284px*7000);
+    }
+    .con-form-sec form input::placeholder, .con-form-sec form textarea::placeholder{
+        font-size: calc(0.01343283582px*7000);
+    }
+    .con-form-sec form input:focus, .con-form-sec form textarea:focus{
+        outline: calc(0.00074626865px*7000);
+    }
+    .con-name, .con-email{
+        width: calc(0.3731343284px*7000);
+        height: calc(0.03731343284px*7000);
+        font-size: calc(0.01343283582px*7000);
+    }
+    .con-message{
+        width: calc(0.3731343284px*7000);
+        height: calc(0.1492537313px*7000);
+        padding-top: calc(0.007462686567px*7000);
+        padding-left: calc(0.003731343284px*7000);
+        font-size: calc(0.01343283582px*7000);
+    }
+    .submit-btn{
+        width: calc(0.1492537313px*7000);
+        height: calc(0.0223880597px*7000);
+        font-size: calc(0.01343283582px*7000);
+    }
+    .con-rep-msg{
+        font-size: calc(0.01343283582px*7000);
+    }
+    .con-title-2{
+        width: calc(0.1492537313px*7000);
+    }
+    .con-first h1, .con-second h1{
+        font-size: calc(0.05223880597px*7000);
+    }
+    .con-second span{
+        width: calc(0.003731343284px*7000);
+        height: calc(0.07462686567px*7000);
+    }
+    .con-second, .con-first{
+        width: calc(0.05223880597px*7000);
+    }
+}
