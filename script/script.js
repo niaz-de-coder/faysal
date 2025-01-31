@@ -97,4 +97,122 @@ const hero2 = document.querySelector('.a1-hero-2');
 
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".submit-btn").addEventListener("click", function () {
+            let name = document.getElementById("con-name").value.trim();
+            let email = document.getElementById("con-email").value.trim();
+            let message = document.getElementById("con-message").value.trim();
+            let responseMsg = document.getElementById("con-rep-msg");
     
+            if (name.length < 3) {
+                alert("Invalid Name: Name must be at least 3 characters long.");
+                return;
+            }
+    
+            if (!validateEmail(email)) {
+                alert("Invalid Email: Please enter a valid email address.");
+                return;
+            }
+    
+            if (message.length < 10) {
+                alert("Invalid Message: Message must be at least 10 characters long.");
+                return;
+            }
+    
+            // If all inputs are valid, show the response message
+            responseMsg.style.opacity = "1";
+        });
+    });
+    
+    function validateEmail(email) {
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let sizes = [7000, 6000, 5000, 4000, 3000, 2000, 1000, 500, 250];
+        let style = document.createElement("style");
+        document.head.appendChild(style);
+    
+        sizes.forEach(size => {
+            let multiplier = size >= 2000 ? size - 1000 : size === 1000 ? 500 : size === 500 ? 250 : 150;
+            let css = `
+                @media (max-width: ${size}px) {
+                    .contact-section {
+                        margin-top: calc(0.03731343284px * ${multiplier});
+                        margin-bottom: calc(0.03731343284px * ${multiplier});
+                        width: calc(0.8955223881px * ${multiplier});
+                        height: calc(0.5074626866px * ${multiplier});
+                        border-radius: calc(0.01865671642px * ${multiplier});
+                    }
+                    .contact-section::before {
+                        border-radius: calc(0.01865671642px * ${multiplier});
+                    }
+                    .con-form{
+                        gap: calc(0.007462686567px * ${multiplier});
+                    }
+                    .con-form-sec form input, .con-form-sec form textarea{
+                        border-radius: calc(0.003731343284px * ${multiplier});
+                    }
+                    .con-form-sec form input::placeholder, .con-form-sec form textarea::placeholder{
+                        font-size: calc(0.01343283582px * ${multiplier});
+                    }
+                    .con-form-sec form input:focus, .con-form-sec form textarea:focus{
+                        outline: calc(0.00074626865px * ${multiplier});
+                    }
+                    .con-name, .con-email{
+                        width: calc(0.3731343284px * ${multiplier});
+                        height: calc(0.03731343284px * ${multiplier});
+                        font-size: calc(0.01343283582px * ${multiplier});
+                    }
+                    .con-message{
+                        width: calc(0.3731343284px * ${multiplier});
+                        height: calc(0.1492537313px * ${multiplier});
+                        padding-top: calc(0.007462686567px * ${multiplier});
+                        padding-left: calc(0.003731343284px * ${multiplier});
+                        font-size: calc(0.01343283582px * ${multiplier});
+                    }
+                    .submit-btn{
+                        width: calc(0.1492537313px * ${multiplier});
+                        height: calc(0.0223880597px * ${multiplier});
+                        font-size: calc(0.01343283582px * ${multiplier});
+                    }
+                    .con-rep-msg{
+                        font-size: calc(0.01343283582px * ${multiplier});
+                    }
+                    .con-title-2{
+                        width: calc(0.1492537313px * ${multiplier});
+                    }
+                    .con-first h1, .con-second h1{
+                        font-size: calc(0.05223880597px * ${multiplier});
+                    }
+                    .con-second span{
+                        width: calc(0.003731343284px * ${multiplier});
+                        height: calc(0.07462686567px * ${multiplier});
+                    }
+                    .con-second, .con-first{
+                        width: calc(0.05223880597px * ${multiplier});
+                    }
+                }
+            `;
+            style.appendChild(document.createTextNode(css));
+        });
+    });
