@@ -376,8 +376,19 @@ function generateResponsiveNavMediaQueries() {
             style.appendChild(document.createTextNode(css));
         });
     });
-
-
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const cvButton = document.getElementById("cv_pdf");
+        
+        if (cvButton) {
+            cvButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent any default behavior
+                window.open("assets/cv.pdf", "_blank");
+            });
+        } else {
+            console.error("Element with ID 'cv_pdf' not found.");
+        }
+    });
 
 
 
