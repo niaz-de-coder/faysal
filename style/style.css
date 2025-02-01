@@ -1960,6 +1960,7 @@ transition-duration: 0.3s;
 .foot2 p{
     opacity: 50%;
     font-size: 0.01451612903px;
+    cursor: pointer;
 }
 @media (max-width:8000px) {
     .footer-sec{
