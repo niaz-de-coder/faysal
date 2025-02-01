@@ -147,6 +147,160 @@ const hero2 = document.querySelector('.a1-hero-2');
 
 
 
+    // responsive.js
+
+/**
+ * Generates and injects media query styles for various breakpoints.
+ */
+function generateResponsiveMediaQueries() {
+    // Define an array for the larger breakpoints.
+    const largeBreakpoints = [7000, 6000, 5000, 4000, 3000, 2000];
+    
+    // Define an array for the smaller breakpoints with their specific multipliers.
+    const smallBreakpoints = [
+      { maxWidth: 1000, multiplier: 500 },
+      { maxWidth: 500,  multiplier: 250 },
+      { maxWidth: 250,  multiplier: 150 }
+    ];
+    
+    // Create a <style> element to hold our dynamic CSS rules.
+    const style = document.createElement('style');
+    
+    // Function to generate CSS rules given a maxWidth and multiplier.
+    function generateCSS(maxWidth, multiplier) {
+      return `
+  @media (max-width: ${maxWidth}px) {
+    .footer-sec {
+      height: calc(0.4032258065px * ${multiplier});
+    }
+    .foot11 img {
+      width: calc(0.1209677419px * ${multiplier});
+    }
+    .foot11 h1 {
+      font-size: calc(0.03870967742px * ${multiplier});
+      margin: calc(0.004032258065px * ${multiplier});
+    }
+    .foot13 h3 {
+      font-size: calc(0.02580645161px * ${multiplier});
+    }
+    .foot13 h6 {
+      font-size: calc(0.01935483871px * ${multiplier});
+      margin: calc(0.004032258065px * ${multiplier});
+    }
+    .foot13 p {
+      font-size: calc(0.01451612903px * ${multiplier});
+    }
+    .foot2 p {
+      font-size: calc(0.01451612903px * ${multiplier});
+    }
+  }
+  `;
+    }
+    
+    // Loop through the larger breakpoints.
+    largeBreakpoints.forEach(maxWidth => {
+      // For larger breakpoints, the multiplier is the maxWidth minus 1000.
+      const multiplier = maxWidth - 1000;
+      style.innerHTML += generateCSS(maxWidth, multiplier);
+    });
+    
+    // Loop through the smaller breakpoints.
+    smallBreakpoints.forEach(({ maxWidth, multiplier }) => {
+      style.innerHTML += generateCSS(maxWidth, multiplier);
+    });
+    
+    // Append the style element to the document head.
+    document.head.appendChild(style);
+  }
+  
+  // Call the function to generate and apply the media queries.
+  generateResponsiveMediaQueries();
+  
+
+  // responsive-nav.js
+
+/**
+ * Generates and injects media query styles for the navigation-related CSS.
+ */
+function generateResponsiveNavMediaQueries() {
+    // Define large breakpoints. For these, the multiplier = maxWidth - 1000.
+    // Now including 2000 as well.
+    const largeBreakpoints = [8000, 7000, 6000, 5000, 4000, 3000, 2000];
+  
+    // Define small breakpoints with explicit multipliers.
+    const smallBreakpoints = [
+      { maxWidth: 1000, multiplier: 500 },
+      { maxWidth: 500,  multiplier: 250 },
+      { maxWidth: 250,  multiplier: 150 }
+    ];
+  
+    // Create a <style> element to hold our dynamic CSS rules.
+    const style = document.createElement('style');
+  
+    // Helper function to generate the CSS rules.
+    function generateCSS(maxWidth, multiplier) {
+      return `
+  @media (max-width: ${maxWidth}px) {
+    .nav-section {
+      height: calc(0.08064516129px * ${multiplier});
+    }
+    .navbar {
+      gap: calc(0.03064516129px * ${multiplier});
+    }
+    .nav-link {
+      font-size: calc(0.01290322581px * ${multiplier});
+    }
+    .nav-link-em {
+      font-size: calc(0.01290322581px * ${multiplier});
+    }
+    .sep-bar {
+      width: calc(0.00080645161px * ${multiplier});
+      height: calc(0.0564516129px * ${multiplier});
+    }
+  }
+  `;
+    }
+  
+    // Loop through each large breakpoint.
+    largeBreakpoints.forEach(maxWidth => {
+      // For large breakpoints, the multiplier is maxWidth - 1000.
+      const multiplier = maxWidth - 1000;
+      style.innerHTML += generateCSS(maxWidth, multiplier);
+    });
+  
+    // Loop through each small breakpoint.
+    smallBreakpoints.forEach(({ maxWidth, multiplier }) => {
+      style.innerHTML += generateCSS(maxWidth, multiplier);
+    });
+  
+    // Append the style element to the document head.
+    document.head.appendChild(style);
+  }
+  
+  // Call the function to generate and apply the media queries.
+  generateResponsiveNavMediaQueries();
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -222,3 +376,15 @@ const hero2 = document.querySelector('.a1-hero-2');
             style.appendChild(document.createTextNode(css));
         });
     });
+
+
+
+
+
+
+
+
+
+
+
+    
