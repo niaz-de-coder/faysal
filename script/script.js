@@ -121,6 +121,12 @@ const hero2 = document.querySelector('.a1-hero-2');
     
             // If all inputs are valid, show the response message
             responseMsg.style.opacity = "1";
+            let parms = {
+                con_name : document.getElementById("con-name").value,
+                con_email : document.getElementById("con-email").value,
+                con_message : document.getElementById("con-message").value,
+            }
+            emailjs.send("service_x0005lk", "template_ldiq4vi", parms)
         });
     });
     
