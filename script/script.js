@@ -376,7 +376,7 @@ function generateResponsiveNavMediaQueries() {
             style.appendChild(document.createTextNode(css));
         });
     });
-    
+
     document.addEventListener("DOMContentLoaded", function () {
         const cvButton = document.getElementById("cv_pdf");
         
@@ -392,7 +392,16 @@ function generateResponsiveNavMediaQueries() {
 
 
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("niazdecoder");
+    if (button) {
+        button.addEventListener("click", function () {
+            window.location.href = "https://niazdecoder.netlify.app/";
+        });
+    } else {
+        console.error("Element with ID 'niazdecoder' not found.");
+    }
+});
 
 
 
